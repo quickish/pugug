@@ -23,5 +23,5 @@ def webhook (item):
 @app.post("/webhook/uplink")
 def uplink (item: dict):
     print(item)
-    tem.append(item["uplink_message"]["decoded_payload"])
+    tem.append(item)
     return {"success": True}
